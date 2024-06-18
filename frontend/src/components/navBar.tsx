@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { NomicBrand } from "./brand";
-import { HomeIcon, TableCellsIcon } from "@heroicons/react/20/solid";
+import { HomeIcon, ChartBarIcon } from "@heroicons/react/20/solid";
 import { classNames } from "@/utils";
 import { usePathname } from "next/navigation";
 
@@ -8,7 +8,7 @@ const navigation = [
   { name: "Home", icon: HomeIcon, href: "/", current: true },
   {
     name: "UMAP",
-    icon: TableCellsIcon,
+    icon: ChartBarIcon,
     href: "/umap",
     current: true
   }
@@ -16,6 +16,7 @@ const navigation = [
 
 export default function Navbar() {
   const pathname = usePathname();
+
   return (
     <div className="flex grow flex-col gap-y-5 overflow-y-auto bg-navy-950 px-6 pb-4">
       <div className="flex h-16 shrink-0 items-center">
