@@ -22,6 +22,8 @@ class Dataset(models.Model):
 
 
 class Sample(models.Model):
+    plate_barcode = models.CharField(max_length=100, db_index=True)
+    well_id = models.CharField(max_length=100)
     dataset = models.ForeignKey("Dataset", on_delete=models.CASCADE)
     metadata = ORJSONDecodedField(null=True)
 
