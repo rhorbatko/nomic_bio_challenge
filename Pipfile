@@ -10,6 +10,7 @@ markdown = "*"
 django-filter = "*"
 orjson = "*"
 pytest-django = "*"
+django-cors-headers = "*"
 
 [dev-packages]
 pytest = "*"

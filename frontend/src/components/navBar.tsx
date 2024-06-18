@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { NomicBrand } from "./brand";
 import { HomeIcon, ChartBarIcon } from "@heroicons/react/20/solid";
-import { classNames } from "@/utils";
+import { classNames } from "@/lib/utils";
 import { usePathname } from "next/navigation";
 
 const navigation = [
