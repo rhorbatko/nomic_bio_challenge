@@ -3,6 +3,13 @@
 1. Add a new umap feature to the existing web app. 
 2. Fix a bug (details TDB)
 
+## Submitting Assessment
+Clone this repository and push it to a private repo on your account, and then give access to the following users:
+- @nomichris
+- @thomas-dunlop
+
+Make sure to email chris.harris@nomic.bio when you complete the assesment and it is ready for review. 
+
 ## UMAP Feature
 See this wireframe for UI details.
 
@@ -16,6 +23,7 @@ Tech stack requirements
 - Endpoints should be written using [django-rest-framework](https://www.django-rest-framework.org/). The Dataset endpoint gives a good example of written endpoints, serializers, and tests using the framework.
 - Graphs should use [plotly js](https://plotly.com/javascript/react/).
 - Backend queries should use [SWR Vercel](https://swr.vercel.app/). The homepage shows a good example of fetching Datasets using the package. 
+- You can optionally use [Flowbite](https://flowbite-react.com/) and [Tremor](https://www.tremor.so/) as component libraries. 
 
 A react page has already been created at `fronted/src/app/umap` to contain the feature. 
 

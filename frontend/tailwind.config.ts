@@ -237,6 +237,7 @@ const config: Config = {
   },
   plugins: [
     require("@headlessui/tailwindcss"),
+    require("flowbite/plugin"),
     require("@tailwindcss/aspect-ratio")
   ]
 };
