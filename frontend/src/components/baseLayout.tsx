@@ -2,29 +2,15 @@
 
 import { Fragment, useState } from "react";
 import { Dialog, Transition } from "@headlessui/react";
-import { useRouter, usePathname } from "next/navigation";
 import { XMarkIcon, Bars3Icon } from "@heroicons/react/24/outline";
 import Navbar from "./navBar";
-
-const userNavigation = [
-  { name: "Sign out", href: "/logout" },
-  {
-    name: "Admin",
-    href: `${process.env.NEXT_PUBLIC_ROOT_URL}/analysis/admin`,
-    adminOnly: true
-  },
-  { name: "User Info", href: "/dashboard/userInfo" }
-];
 
 export default function BaseLayout({
   children
 }: {
-  children: React.ReactNode
+  children: React.ReactNode;
 }) {
   const [sidebarOpen, setSidebarOpen] = useState(false);
-
-  const router = useRouter();
-  const pathname = usePathname();
 
   return (
     <div>
@@ -81,7 +67,7 @@ export default function BaseLayout({
                   </div>
                 </Transition.Child>
                 {/* Sidebar component, swap this element with another sidebar if you like */}
-                <Navbar/>
+                <Navbar />
               </Dialog.Panel>
             </Transition.Child>
           </div>
@@ -91,11 +77,11 @@ export default function BaseLayout({
       {/* Static sidebar for desktop */}
       <div className="hidden lg:fixed lg:inset-y-0 lg:z-19 lg:flex lg:w-72 lg:flex-col">
         {/* Sidebar component, swap this element with another sidebar if you like */}
-        <Navbar/>
+        <Navbar />
       </div>
 
       <div className="lg:pl-72">
-      <div className="sticky top-0 z-18 flex h-16 shrink-0 items-center gap-x-4 bg-white px-4 shadow-sm sm:gap-x-6 sm:px-6 lg:px-8">
+        <div className="sticky top-0 z-18 flex h-16 shrink-0 items-center gap-x-4 bg-white px-4 shadow-sm sm:gap-x-6 sm:px-6 lg:px-8">
           <button
             type="button"
             className="-m-2.5 p-2.5 text-gray-700 lg:hidden"
