@@ -5,8 +5,8 @@
 
 ## Submitting Assessment
 Clone this repository and push it to a private repo on your account, and then give access to the following users:
-- [@nomichris](https://github.com/nomichris)
-- [@thomas-dunlop](https://github.com/thomas-dunlop)
+- [@nomichris](https://github.com/nomichris){:target="_blank"}
+- [@thomas-dunlop](https://github.com/thomas-dunlop){:target="_blank"}
 
 Make sure to email chris.harris@nomic.bio when you complete the assesment and it is ready for review. 
 
