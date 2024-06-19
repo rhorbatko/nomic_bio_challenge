@@ -37,7 +37,7 @@ class Command(BaseCommand):
             "BAFF",
             "CCL1",
             "CNTF",
-            "IL-10",
+            "IFN gamma",
             "Mesothelin",
             "PDGF-BB",
             "TWEAK",

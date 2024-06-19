@@ -10,7 +10,9 @@ Clone this repository and push it to a private repo on your account, and then gi
 Make sure to email chris.harris@nomic.bio when you complete the assesment and it is ready for review. 
 
 ## UMAP Feature
-See this wireframe for UI details.
+[UMAP](https://umap-learn.readthedocs.io/en/latest/) (Uniform Manifold Approximation and Projection for Dimension Reduction) is a is a dimension reduction technique. For this assesment, you need to plot a two dimensional UMAP scatterplot with x_coor long the x-axis and y_coor along the y-axis. The user should be able to select which dataset to display, what points appear based on their metadata, and colour the plot based on a selected target's signal. See below for an example plot. 
+
+![Example UMAP](./Example%20UMAP.png)
 
 Feature Requirements
 - A user should be able to select a dataset and visualize the associated UMAP plot points in a scatter plot. 
