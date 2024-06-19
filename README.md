@@ -1,7 +1,6 @@
 # sw-fullstack-coding-challenge
 ## Goal
-1. Add a new umap feature to the existing web app. 
-2. Fix a bug (details TDB)
+Add a new umap graphing feature to the existing web app. 
 
 ## Submitting Assessment
 Clone this repository and push it to a private repo on your account, and then give access to the following users:
@@ -17,6 +16,7 @@ Feature Requirements
 - A user should be able to select a dataset and visualize the associated UMAP plot points in a scatter plot. 
 - A user should be able to filter which points appear based on their associated metadata (ex, only showing plot points for Donor 1).
 - A user should be able to colour the plot points based on the signal level for an associated target (ex, user can select APRIL and the plot points will be coloured using a continous gradient based on the linked SampleSignals with target=APRIL). 
+- Your solution should be scalable to 500 targets and 1000 samples per dataset. 
 
 Tech stack requirements
 - CSS styling should be done using [tailwind](https://tailwindcss.com/). 
