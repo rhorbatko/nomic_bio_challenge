@@ -1,6 +1,6 @@
 # sw-fullstack-coding-challenge
 ## Goal
-Add a new umap graphing feature to the existing web app. 
+Add a new umap graphing feature to the existing web app. **This assessment should take a maximum of 5 hours**. 
 
 ## Submitting Assessment
 Clone this repository and push it to a private repo on your account, and then give access to the following users:
