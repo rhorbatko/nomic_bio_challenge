@@ -7,7 +7,8 @@ module.exports = {
   root: true,
   parser: "@typescript-eslint/parser",
   parserOptions: {
-    project: "./frontend/tsconfig.json"
+    project: "./tsconfig.json",
+    tsconfigRootDir: __dirname,
   },
   plugins: ["@typescript-eslint"],
   rules: {
@@ -19,5 +20,6 @@ module.exports = {
       extends: ["plugin:@typescript-eslint/disable-type-checked"],
       files: ["./**/*.js"]
     }
-  ]
+  ],
+  ignorePatterns: ['.eslintrc.js'],
 };
