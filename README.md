@@ -26,7 +26,7 @@ Tech stack requirements
 - Graphs should use [plotly js](https://plotly.com/javascript/react/).
 - Backend queries should use [SWR Vercel](https://swr.vercel.app/). The homepage shows a good example of fetching Datasets using the package. 
 - You can optionally use [Flowbite](https://flowbite-react.com/) and [Tremor](https://www.tremor.so/) as component libraries.
-- **yarn build should work on the finished project**
+- **`yarn build` should work on the finished project**
 
 A react page has already been created at `fronted/src/app/umap` to contain the feature. 
 
