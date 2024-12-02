@@ -9,7 +9,7 @@ const navigation = [
   {
     name: "UMAP",
     icon: ChartBarIcon,
-    href: "/umap",
+    href: "/umap?dataset_id=1&target=APRIL",
     current: true
   }
 ];

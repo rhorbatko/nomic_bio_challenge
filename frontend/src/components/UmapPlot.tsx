@@ -8,6 +8,7 @@ import { fetchJson } from '@/lib/fetching';
 interface UmapPlotProps {
     datasetId: number;
     target: string;
+    metadata?: string;
 }
 
 interface UmapPoint {
@@ -17,14 +18,18 @@ interface UmapPoint {
 }
 
 
-export default function UmapPlot({ datasetId, target }: UmapPlotProps) {
+export default function UmapPlot({ datasetId, target, metadata }: UmapPlotProps) {
+
+    const queryParams = `dataset_id=${datasetId}&target=${target}${
+        metadata ? `&metadata=${encodeURIComponent(metadata)}` : ""
+      }`;
     const { data, error, isLoading } = useSWR<UmapPoint[]>(
-        `/api/umap/?dataset_id=${datasetId}&target=${target}`,
+        `/api/umap?${queryParams}`,
         fetchJson
     );
 
     if (error) return <div>Error loading data</div>;
-    if (!data) return <div>Loading...</div>;
+    if (isLoading||!data) return <div>Loading...</div>;
 
     const points: UmapPoint[] = data.map((point: any) => ({
         x: point.x_coor,
