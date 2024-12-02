@@ -1,9 +1,8 @@
 from api.models import Target
-from rest_framework.decorators import api_view
-from rest_framework.response import Response
+from rest_framework import viewsets
+from api.serializers import TargetSerializer
 
 
-@api_view(["GET"])
-def get_targets(request):
-    targets = Target.objects.values_list("name", flat=True)
-    return Response(targets)
+class TargetViewSet(viewsets.ReadOnlyModelViewSet):
+    queryset = Target.objects.all()
+    serializer_class = TargetSerializer

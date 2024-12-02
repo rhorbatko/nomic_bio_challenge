@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from api.models import Dataset, UmapPlotPoint
+from api.models import Dataset, UmapPlotPoint, Target
 
 
 class DatasetSerializer(serializers.ModelSerializer):
@@ -14,3 +14,9 @@ class UmapPlotPointSerializer(serializers.ModelSerializer):
     class Meta:
         model = UmapPlotPoint
         fields = ["x_coor", "y_coor", "signal"]
+
+
+class TargetSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Target
+        fields = ["id", "name"]
