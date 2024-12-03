@@ -14,8 +14,11 @@ class UmapView(APIView):
 
         points = UmapPlotPoint.objects.filter(sample__dataset=dataset_id)
 
+        print(metadata_filter)
         if metadata_filter:
-            points = points.filter(sample__metadata__contains=metadata_filter)
+            key, value = metadata_filter.split(":", 1)
+            filter_string = f'"{key}": "{value}"'
+            points = points.filter(sample__metadata__icontains=filter_string)
 
         if target_name:
             points = points.annotate(
